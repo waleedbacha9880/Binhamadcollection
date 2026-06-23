@@ -341,7 +341,7 @@ function loadProductDetail() {
                     <button class="btn-primary" onclick="addToCart(${product.id})" style="flex:1;text-align:center;">
                         <i class="fas fa-shopping-bag"></i> Add to Cart
                     </button>
-                    <a href="https://wa.me/923001234567?text=Hi%20Bin%20Hamad%20Collection%2C%20I%20want%20to%20order%20${encodeURIComponent(product.name)}%20(${product.size})" 
+                    <a href="https://wa.me/923128796581?text=Hi%20Bin%20Hamad%20Collection%2C%20I%20want%20to%20order%20${encodeURIComponent(product.name)}%20(${product.size})" 
                        target="_blank" 
                        class="btn-whatsapp" style="flex:1;text-align:center;justify-content:center;">
                         <i class="fab fa-whatsapp"></i> Order on WhatsApp
@@ -511,7 +511,7 @@ function renderCartItems() {
             message += '- ' + item.name + ' (' + item.size + ') x ' + item.qty + ' = Rs. ' + (item.price * item.qty).toLocaleString() + '%0A';
         });
         message += '%0ATotal: Rs. ' + subtotal.toLocaleString() + '%0A%0ADelivery Address: [Your Address Here]%0APhone: [Your Phone Here]';
-        whatsappBtn.href = 'https://wa.me/923001234567?text=' + message;
+        whatsappBtn.href = 'https://wa.me/923128796581?text=' + message;
     }
 }
 
@@ -537,7 +537,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const message = document.getElementById('message').value;
 
             const whatsappMsg = 'Hi Bin Hamad Collection,%0AMy name is: ' + name + '%0AMy email: ' + email + '%0AMessage: ' + message;
-            window.open('https://wa.me/923001234567?text=' + whatsappMsg, '_blank');
+            window.open('https://wa.me/923128796581?text=' + whatsappMsg, '_blank');
 
             showToast('Message sent via WhatsApp!');
             this.reset();
